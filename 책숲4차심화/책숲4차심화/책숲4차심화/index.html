@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>활동 내용</title>
+    <style>
+        li{
+            margin:10px
+        }
+    </style>
+</head>
+<body style="font-family:  Geneva,Verdana, Arial, sans-serif;">
+    <div style="top:0; position: fixed;">
+        <h3 class="show" style="margin-bottom:5px"> 
+           역할
+        </h3>
+    
+        <div class="name" style="margin:0;display:block;"><button onclick="s()">슬기</button>
+            <button onclick="s2()">수빈</button>
+<button onclick="y()">유리</button>
+<button onclick="y()">연학</button>
+<button onclick="y()">효빈</button>
+</div>
+</div>
+<script>
+function s(){
+    alert("  웹사이트 안에 넣을 내용 정리하기 (책 소개, 이번 심화하기 활동, 1~3차 심화하기 활동 소개)")
+
+}
+function s2(){
+    alaer(" 웹 사이트 홈 만들기")
+}
+function y(){
+    alert("본 웹 사이트 안에 들어갈 html 웹사이트 만들기")
+}
+</script>
+    
+    
+    
+    <div style=" margin-top:180px;padding:5px">
+        <h3 style="margin-top:20px; margin-bottom:0; padding:10px">활동 순서</h3>
+       <div  style="padding:5px;margin:5px;
+                        border:3px solid black">
+        <h3> github로 팀 만들기 </h3>
+        <ol>
+            <li> GitHub에서 오른쪽 위의 프로필 사진을 클릭한 다음 내 조직(your organizations) 클릭하기</li>
+            <li>클릭한 다음 페이지 맨 위에서 새 팀을 만들기<br> 1)‘새 팀 만들기’에서 새팀의 이름을 입력하기
+                <br>2)필요에 따라 ‘설명’ 필드에 팀 설명 입력하기
+                <br>3)필요에 따라 자식 팀을 만드는 경우 부모 팀에서 부모 팀 선택 드롭다운 메뉴를 선택하고 부모 팀 클
+                릭하기       </li>
+            <li> 필요에 따라 팀에게 조직 리포지토리에 대한 엑세스 권한 부여하기
+
+                <br> 조직 리포지토리 역할: 세분화된 역할을 할당하여 조직의 각 리포지토리에 대한 엑세스를 사용자 지정 하여 필요한 기능 및 작업에 대한 엑세스 권한을 사용자에게 부여할 수 있음.
+
+            </li>
+        </ol>
+        
+       </div>
+       <div style="padding:5px;margin:5px;
+                     border:3px solid black">
+        <h3> html 웹사이트 만들기 </h3>
+        <ol>
+            <li> Visual Studio Code 다운로드 하기</li>
+            <li>파일 지정하기<br> HTML, JS, CSS파일을 저장해둘 저장 폴더가 필요하기 때문에 이 과정을 거침.
+                <br>1)Explorer 클릭 후 Open Folder 클릭하기
+                <br>2)폴더를 생성하여 저장할 곳 지정하기     </li>
+            <li> Visual Studio Code를 통해 HTML파일 만들기
+
+                <br> 폴더명 우측에 있는 첫 번째 아이콘을 클릭하여 파일 생성하기 (두번째 아이콘은 폴더를 생성함)
+                <br>*파일을 생성할 때 해당 파일이 html이라는 사실을 인지시켜 주기 위해 html 확장자를 반드시 입력해야
+                   
+                함.
+            </li>
+            <li>
+                CSS와 JS 파일 생성하기<br>과정에서 했던 것에서 확장자만 html 대신, css 혹은 js로 입력하기
+            </li>
+            <li>
+                Visual Studio Code를 통해 HTML 코딩<br>좌측에 있는 파일을 클릭하면 우측에 코드작성하는 페이지를 확인할 수 있음. 
+                그곳에 코딩을 실시하면됨.<br>
+
+            </li>
+            <li>
+                작성 코드 저장 후, 출력하기<br>태그명*3의 경우 태그를 한번에 3개를 생성하겠다는 의미. 이 외에도 여러 자동 완성 명령어가 존재함.
+
+            </li>
+            <li style="list-style-type:circle">
+               <h4> Live Server</h4><br>일일이 저장한 파일을 확인하는 것이 아닌 바로바로 라이브로 확인할 수 있는 플러그인.
+                <br>탭을 누르고 검색란에 Live Server라고 검색한 후 install하고 Visual Studio Code를 재실행하면됨.
+                <br>Live Server의 장점: 파일을 저장할 때마다 바로바로 html 파일에 적용되기 때문에 일일이 파일을 열어 주거나 새로고침할 필요가 없음.
+            </li>
+        </ol>
+       </div>
+       <div  style="padding:5px;margin:5px;
+                        border:3px solid black">
+        <h3>하나의 웹사이트에 각각 만든 웹사이트 연동하고 내용을 채워 하나의 웹사이트 만들기</h3>
+        <ul>
+            <li>
+                HTML iframe: 웹 페이지 안에 또 다른 웹페이지를 삽입할 수 있음.
+                <br>
+                태그 안 내용:iframe src = “삽입하는 웹페이지 URL” title=“내용”
+                <br>
+                *src: source의 약자로, 삽입하려는 웹페이지의 주소를 입력함.
+                <br>*title: 웹 브라우저에게 해당 iframe이 어떤 iframe인지를 알림. 이 속성은 필수사항은 아니지만 권장함.
+        
+            </li>
+          <li>
+               width, height 속성을 사용할 시 iframe의 너비와 높이를 지정할 수 있음.
+             <br>  태그 안 내용:iframe src=“삽입하는 웹페이지 URL”title=“내용” width=“100%”height=“300px”
+            </li>
+        </ul>
+       </div>
+    
+    </div >
+  
+   
+</body>
+</html>
